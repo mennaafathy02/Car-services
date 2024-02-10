@@ -1,0 +1,26 @@
+:root {
+    --primary-text-color: #000;
+    --secondary-text-color: #c3984f;
+    --background-color: #fff;
+}
+html::-webkit-scrollbar{
+    width:.3rem;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-text-color);
+    border-radius: 50px;
+}
+html::-webkit-scrollbar-track{
+    background-color: #000;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
